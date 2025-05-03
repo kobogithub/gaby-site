@@ -1,0 +1,32 @@
+---
+### Service Web Personal ####
+services:
+  app:
+    image: gaby-site:latest
+    container_name: gaby-site
+    ports:
+      - "8085:80"
+    restart: unless-stopped
+    # Si necesitas variables de entorno
+    environment:
+      - NODE_ENV=production
+    # Si necesitas healthcheck
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:80"]
+      interval: 31s
+      timeout: 10s
+      retries: 4
+    deploy:
+      resources:
+        limits:
+          cpus: "0.50"
+          memory: 512M
+        reservations:
+          cpus: "0.25"
+          memory: 256M
+    networks:
+      - public
+
+networks:
+  public:
+    external: true
