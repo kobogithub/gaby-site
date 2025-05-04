@@ -3,12 +3,12 @@
 export const EDUCATION = [
   {
     title: "Perito Judicial",
-    year: "", // o puede ser "En curso"
+    year: "En curso", // o puede ser "En curso"
     institute: "Colegio de Obstétricas de la Prov. Buenos Aires" // Aquí el instituto donde estudió
   },
   {
     title: "Tramo de formación Pedagógica",
-    year: "", // o puede ser "En curso"
+    year: "En curso", // o puede ser "En curso"
     institute: "Universidad de FASTA" // Aquí el instituto donde estudió
   },
   {
