@@ -3,7 +3,7 @@ export const PROFILE_INFO = {
   logo: 'Gabriela Barreto',
   slogan: 'Seguridad, Prevención, Calidad de Vida...',
   displayName: "Gabriela Barreto",
-  email: "gjbarreto@hotmail.com",
+  email: "gabrielajbarreto@gmail.com",
   about: `
 Soy **Licenciada en Higiene y Seguridad en el Trabajo** especializada en la gestión de riesgos laborales y el desarrollo de ambientes de trabajo seguros. Mi pasión es proteger la integridad física y mental de los trabajadores mediante la implementación de estrategias preventivas innovadoras.
 
