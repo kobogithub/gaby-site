@@ -6,6 +6,7 @@ import Box from "@/components/box/index.astro";
 import BoxHeader from "@/components/box/header.astro";
 import BoxTitle from "@/components/box/title.astro";
 import BoxContent from "@/components/box/content.astro";
+import matriculaImage from "@/assets/matricula-seguridad.png";
 ---
 
 <Box>
@@ -17,5 +18,14 @@ import BoxContent from "@/components/box/content.astro";
       className="text-sm leading-7 font-medium"
       content={PROFILE_INFO.about}
     />
+    <div class="mt-6 p-4 border border-border rounded-lg">
+      <h3 class="text-sm font-semibold mb-2">Matrícula Profesional</h3>
+      <img 
+        src={matriculaImage.src} 
+        alt="Matrícula de Seguridad e Higiene en el Trabajo"
+        class="max-w-full h-auto rounded-lg shadow-sm"
+      />
+    </div>
   </BoxContent>
 </Box>
+

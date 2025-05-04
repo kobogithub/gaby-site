@@ -1,11 +1,8 @@
-export type ExperiencePosition = {
-    title: string;
-    year: string;
-    description: string;
-    skills: string[];
-};
-
 export type Experience = {
-    company: string;
-    positions: ExperiencePosition[];
+  date: string;
+  company: string;
+  subcontractor?: string;
+  present: boolean;
+  position: string;
+  role: string;
 };

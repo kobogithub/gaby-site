@@ -1,0 +1,21 @@
+<!-- src/pages/education.astro -->
+---
+import Layout from "@/layouts/layout.astro";
+import Navbar from "@/components/navbar/index.astro";
+import Footer from "@/components/footer.astro";
+import Pattern from "@/components/ui/pattern.astro";
+import Education from "@/components/sections/education/education.astro";
+---
+<Layout title="Educación | Gabriela Barreto">
+  <Navbar />
+  <main
+    aria-label="Education content"
+    class="mx-auto min-h-[calc(100vh-120px)] max-w-3xl"
+  >
+    <Pattern className="h-14" />
+    <h1 class="text-4xl font-bold mb-8">Educación</h1>
+    <Education />
+    <Pattern />
+  </main>
+  <Footer />
+</Layout>

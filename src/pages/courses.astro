@@ -1,0 +1,21 @@
+<!-- src/pages/courses.astro -->
+---
+import Layout from "@/layouts/layout.astro";
+import Navbar from "@/components/navbar/index.astro";
+import Footer from "@/components/footer.astro";
+import Pattern from "@/components/ui/pattern.astro";
+import Courses from "@/components/sections/courses/courses.astro";
+---
+<Layout title="Cursos | Gabriela Barreto">
+  <Navbar />
+  <main
+    aria-label="Courses content"
+    class="mx-auto min-h-[calc(100vh-120px)] max-w-3xl"
+  >
+    <Pattern className="h-14" />
+    <h1 class="text-4xl font-bold mb-8">Cursos y Certificaciones</h1>
+    <Courses />
+    <Pattern />
+  </main>
+  <Footer />
+</Layout>

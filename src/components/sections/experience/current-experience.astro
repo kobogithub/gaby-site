@@ -1,0 +1,27 @@
+<!-- src/components/sections/experience/current-experience.astro -->
+---
+import Box from "@/components/box/index.astro";
+import BoxHeader from "@/components/box/header.astro";
+import BoxTitle from "@/components/box/title.astro";
+import BoxContent from "@/components/box/content.astro";
+import { EXPERIENCES } from "@/lib/constants/experience";
+import ExperienceItem from "./experience-item.astro";
+
+// Filtrar solo las experiencias actuales
+const currentExperiences = EXPERIENCES.filter(exp => exp.present === true);
+---
+
+{currentExperiences.length > 0 && (
+  <Box>
+    <BoxHeader>
+      <BoxTitle> Experiencia Actual </BoxTitle>
+    </BoxHeader>
+    <BoxContent className="px-0">
+      {
+        currentExperiences.map(experience => {
+          return <ExperienceItem experience={experience} />;
+        })
+      }
+    </BoxContent>
+  </Box>
+)}

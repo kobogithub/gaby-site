@@ -1,0 +1,27 @@
+<!-- src/components/sections/education/education-item.astro -->
+---
+interface Props {
+  education: {
+    title: string;
+    year: string;
+    institute: string;
+  };
+}
+const { education } = Astro.props;
+---
+<div class="space-y-2 p-4 border-b last:border-b-0">
+  <div class="flex items-center justify-between">
+    <h3 class="text-lg font-semibold">
+      {education.title}
+    </h3>
+    <div class="text-sm text-foreground/70 flex items-center gap-2">
+      {education.year}
+      {education.year === "En curso" && (
+        <span class="px-2 py-1 text-xs rounded-full bg-primary/10 text-primary font-medium">
+          En curso
+        </span>
+      )}
+    </div>
+  </div>
+  <p class="text-sm text-foreground/70">{education.institute}</p>
+</div>

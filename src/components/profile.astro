@@ -7,8 +7,6 @@ import { PROFILE_INFO } from "@/lib/constants/profile";
 import { Briefcase } from "lucide-react";
 
 import VerifiedIcon from "@/components/ui/icons/verified.astro";
-import XIcon from "@/components/ui/icons/x.astro";
-import GithubIcon from "@/components/ui/icons/github.astro";
 import LinkedinIcon from "@/components/ui/icons/linkedin.astro";
 ---
 
@@ -47,10 +45,10 @@ import LinkedinIcon from "@/components/ui/icons/linkedin.astro";
 <div
   class="screen-line-after inline-flex w-full items-center gap-2 border-x bg-yellow-100 px-3 py-2 text-sm font-semibold dark:bg-yellow-500/10"
 >
-  <span class="animate-bounce text-base">👋</span> I'm open to new opportunities
+  <span class="animate-bounce text-base">👋</span> Cualquier consulta puedes
   —
   <a href={`mailto:${PROFILE_INFO.email}`} class="underline underline-offset-4">
-    get in touch
+    escribirme a mi correo
   </a>
 </div>
 
@@ -58,33 +56,21 @@ import LinkedinIcon from "@/components/ui/icons/linkedin.astro";
   <BoxContent className="space-y-3">
     <span class="flex items-center justify-start gap-2">
       <Briefcase className="size-4" />
-      Take a look at my
+      Descarga mi currículum
       <a
-        href="https://drive.google.com/file/d/1c7-UIHy8GUvgj2XHuf7nfhUU4vpjRXSt/view?usp=sharing"
+        href="https://drive.google.com/file/d/1DDXJnfREUN3c_eLnhapOD8UPTJJz9aOz/view?usp=sharing"
         target="_blank"
         class="underline underline-offset-4"
       >
-        Resume
-      </a>
-    </span>
-
-    <span class="flex items-center justify-start gap-2">
-      <XIcon className="size-4" />
-      Follow me on
-      <a
-        href="https://x.com/Louai_Dourov"
-        target="_blank"
-        class="underline underline-offset-4"
-      >
-        Twitter
+        CV
       </a>
     </span>
 
     <span class="flex items-center justify-start gap-2">
       <LinkedinIcon className="size-4" />
-      Let's connect on
+      Conectame conmigo en
       <a
-        href="https://www.linkedin.com/in/louai-boumediene-018919262/"
+        href="https://www.linkedin.com/in/gabriela-julieta-barreto-80305457/"
         class="underline underline-offset-4"
         target="_blank"
       >
@@ -92,16 +78,5 @@ import LinkedinIcon from "@/components/ui/icons/linkedin.astro";
       </a>
     </span>
 
-    <span class="flex items-center justify-start gap-2">
-      <GithubIcon className="size-4" />
-      Check out my repos on
-      <a
-        href="https://github.com/Louai-Zokerburg"
-        class="underline underline-offset-4"
-        target="_blank"
-      >
-        GitHub
-      </a>
-    </span>
   </BoxContent>
 </Box>
