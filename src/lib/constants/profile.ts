@@ -1,7 +1,7 @@
 export const PROFILE_INFO = {
   role: 'Licenciada en Higiene y Seguridad en el Trabajo',
   logo: 'Gabriela Barreto',
-  slogan: 'Seguridad, Prevención, Calidad de Vida...',
+  slogan: '',
   displayName: "Gabriela Barreto",
   email: "gabrielajbarreto@gmail.com",
   about: `
