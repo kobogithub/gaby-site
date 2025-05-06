@@ -1,14 +1,12 @@
 ---
 import { PROFILE_INFO } from "@/lib/constants/profile";
 import MarkdownRenderer from "@/components/ui/markdown-renderer.astro";
-
 import Box from "@/components/box/index.astro";
 import BoxHeader from "@/components/box/header.astro";
 import BoxTitle from "@/components/box/title.astro";
 import BoxContent from "@/components/box/content.astro";
 import matriculaImage from "@/assets/matricula-seguridad.png";
 ---
-
 <Box>
   <BoxHeader>
     <BoxTitle> Sobre mí </BoxTitle>
@@ -18,7 +16,21 @@ import matriculaImage from "@/assets/matricula-seguridad.png";
       className="text-sm leading-7 font-medium"
       content={PROFILE_INFO.about}
     />
-    <div class="mt-6 p-4 border border-border rounded-lg">
+    
+    <div class="mt-6">
+      <div class="flex items-center mb-4">
+        <span class="text-xl mr-2">👷‍♀️</span>
+        <a 
+          href="/services" 
+          class="text-base font-semibold text-foreground"
+          style="transition: color 0.2s ease;"
+          onmouseover="this.style.color='#ffba5a'"
+          onmouseout="this.style.color=''"
+        >
+          Servicios Profesionales
+        </a>
+      </div>
+      
       <h3 class="text-sm font-semibold mb-2">Matrícula Profesional</h3>
       <img 
         src={matriculaImage.src} 
@@ -28,4 +40,3 @@ import matriculaImage from "@/assets/matricula-seguridad.png";
     </div>
   </BoxContent>
 </Box>
-
