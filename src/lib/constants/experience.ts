@@ -93,7 +93,7 @@ export const EXPERIENCES = [
   {
     date: "04/2023 al 01/2024",
     company: "Pobater S.A.",
-    subcontractor: "Ensayos JD S.R.L.",
+    subcontractor: "",
     present: false,
     position: "Jefe de higiene y seguridad en el trabajo con personal a cargo",
     role: "Inducciones, capacitaciones, control de EPP, Check lists, implementación de programas y normas de Seguridad, higiene y medio ambiente, identificar y analizar problemas de seguridad y proponer acciones correctivas, auditar el cumplimiento de normas y procedimientos de seguridad, investigación de siniestros, seguimientos de planes de acción, control de contratistas, evaluación de las instalaciones y elementos contra incendio. Brigada de LCI. Estadísticas. Realización de mejoras en conjunto con el dpto. De mantenimiento, pedidos de EPP y de elementos de seguridad en conjunto con dpto. De compras. AST. Procedimientos. Programa de mediciones ambientales para cumplimento de normativa (coordinación con laboratorios, analistas y técnicos). Recepción de inspecciones OPDS, ART, Ministerio de Trabajo, SRT, municipales. ISO 90001. Secretaria de Energía (res. 404/94, 785/05). Representación en el PACEI (comité de seguridad zonal de seguridad e higiene). PLANACON. Cordinación con OPIP, INTI y Aduana"
