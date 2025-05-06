@@ -1,14 +1,10 @@
 export const PROFILE_INFO = {
   role: 'Licenciada en Higiene y Seguridad en el Trabajo',
   logo: 'Gabriela Barreto',
-  slogan: 'Seguridad, Prevención, Calidad de Vida...',
+  slogan: '',
   displayName: "Gabriela Barreto",
   email: "gabrielajbarreto@gmail.com",
   about: `
-Soy **Licenciada en Higiene y Seguridad en el Trabajo** especializada en la gestión de riesgos laborales y el desarrollo de ambientes de trabajo seguros. Mi pasión es proteger la integridad física y mental de los trabajadores mediante la implementación de estrategias preventivas innovadoras.
-
-Cuento con experiencia en **asesoramiento integral** de seguridad industrial y **capacitación especializada**, siempre actualizada con las últimas normativas y metodologías.
-
-**Comprometida** con la prevención, **orientada** a resultados, **centrada** en las personas.
+Licenciada en Higiene y Seguridad en el Trabajo especializada en gestión de riesgos laborales. Brindo asesoramiento integral y capacitación especializada en seguridad industrial. Mi enfoque: prevención efectiva, resultados tangibles y bienestar de las personas.
   `,
 } as const;
