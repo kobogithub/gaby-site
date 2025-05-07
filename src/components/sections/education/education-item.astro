@@ -15,11 +15,12 @@ const { education } = Astro.props;
       {education.title}
     </h3>
     <div class="text-sm text-foreground/70 flex items-center gap-2">
-      {education.year}
-      {education.year === "En curso" && (
+      {education.year === "En curso" ? (
         <span class="px-2 py-1 text-xs rounded-full bg-primary/10 text-primary font-medium">
           En curso
         </span>
+      ) : (
+        education.year
       )}
     </div>
   </div>
