@@ -3,37 +3,16 @@ import Layout from "@/layouts/layout.astro";
 import Navbar from "@/components/navbar/index.astro";
 import Footer from "@/components/footer.astro";
 import Pattern from "@/components/ui/pattern.astro";
-import Box from "@/components/box/index.astro";
-import BoxHeader from "@/components/box/header.astro";
-import BoxTitle from "@/components/box/title.astro";
-import BoxContent from "@/components/box/content.astro";
-import { SERVICES, SERVICES_TITLE } from "@/lib/constants/services";
+import Services from "@/components/sections/services/services.astro";
 ---
-
 <Layout title="Servicios | Gabriela Barreto">
   <Navbar />
   <main
     aria-label="Services content"
     class="mx-auto min-h-[calc(100vh-120px)] max-w-3xl"
   >
-    <Pattern className="h-14" />
-    <h1 class="text-4xl font-bold mb-8">{SERVICES_TITLE}</h1>
-    
-    {SERVICES.map(category => (
-      <Box class="mb-6">
-        <BoxHeader>
-          <BoxTitle>{category.category}</BoxTitle>
-        </BoxHeader>
-        <BoxContent>
-          <ul class="list-disc pl-6 space-y-2">
-            {category.items.map(item => (
-              <li>{item}</li>
-            ))}
-          </ul>
-        </BoxContent>
-      </Box>
-    ))}
-    
+    <Pattern />
+    <Services />
     <Pattern />
   </main>
   <Footer />

@@ -1,0 +1,21 @@
+<!-- src/components/sections/services/services.astro -->
+---
+import Box from "@/components/box/index.astro";
+import BoxHeader from "@/components/box/header.astro";
+import BoxTitle from "@/components/box/title.astro";
+import BoxContent from "@/components/box/content.astro";
+import { SERVICES, SERVICES_TITLE } from "@/lib/constants/services";
+import ServiceItem from "@/components/sections/services/service-item.astro";
+---
+<Box>
+  <BoxHeader>
+    <BoxTitle>{SERVICES_TITLE}</BoxTitle>
+  </BoxHeader>
+  <BoxContent className="px-0">
+    {
+      SERVICES.map(service => (
+        <ServiceItem service={service} />
+      ))
+    }
+  </BoxContent>
+</Box>
