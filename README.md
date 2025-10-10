@@ -1,41 +1,110 @@
-# Minimalistic Portfolio Website
+# Sitio Web Profesional - Gabriela Barreto
 
 ![Screenshot](./public/screenshot-dark.png)
 
-## Overview
-This is a sleek, modern, and highly customizable portfolio template built using **Astro**. Designed with performance, accessibility, and SEO in mind, it offers a clean and minimalistic experience while providing all the essential features needed for a professional online presence.
+## Descripción General
+Este es un sitio web profesional moderno construido con **Astro**, diseñado para Gabriela Barreto, Licenciada en Higiene y Seguridad en el Trabajo. El sitio presenta sus servicios profesionales, experiencia, educación, cursos y artículos especializados en seguridad laboral.
 
-## Features
-- 🌙 **Light & Dark Mode** – Seamlessly switch between themes.
-- 📱 **Mobile-Friendly** – Fully responsive design.
-- 📖 **Blog Section** – Supports **MDX** with automatic table of contents (TOC) and pagination.
-- 🏷️ **Categorized Articles** – Filter posts by series or category.
-- 🚀 **Projects Showcase** – Detailed overview of projects with images and descriptions.
-- 🖼️ **SEO & Open Graph** – Optimized metadata and dynamic OG images.
-- 🎨 **Sleek & Modern Design** – Crafted with a focus on simplicity and elegance.
+## Características
+- 🌙 **Modo Claro & Oscuro** – Cambio fluido entre temas.
+- 📱 **Diseño Responsive** – Totalmente adaptable a dispositivos móviles.
+- 📖 **Sección de Artículos** – Soporte de **MDX** con tabla de contenidos automática y paginación.
+- 🏷️ **Artículos Categorizados** – Filtrado por series o categorías.
+- 🚀 **Portafolio de Proyectos** – Vista detallada de proyectos con imágenes y descripciones.
+- 💼 **Sección de Servicios** – Consultoría técnica especializada y estudios ambientales.
+- 👔 **Experiencia Profesional** – Timeline de experiencia laboral.
+- 🎓 **Educación y Cursos** – Formación académica y cursos especializados.
+- 🖼️ **SEO & Open Graph** – Metadatos optimizados e imágenes OG dinámicas.
+- 🐳 **Docker Ready** – Containerización con Nginx para producción.
+- 🎨 **Diseño Elegante** – Enfocado en simplicidad y profesionalismo.
 
-## Tech Stack
-Built using the following technologies:
+## Stack Tecnológico
+Construido con las siguientes tecnologías:
 
-- **Astro** – Blazing fast static site generation.
-- **TailwindCSS** – Highly customizable utility-first CSS framework.
-- **TypeScript** – Strict type safety for maintainability.
-- **Prettier** – Code formatting for consistency.
-- **Framer Motion** – Smooth animations and transitions.
+- **Astro 5.5** – Generación estática de sitios ultrarrápida.
+- **TailwindCSS 4.0** – Framework CSS utility-first altamente personalizable.
+- **TypeScript** – Type safety estricto para mejor mantenibilidad.
+- **React 19** – Componentes interactivos.
+- **MDX** – Markdown con componentes JSX.
+- **Framer Motion** – Animaciones y transiciones fluidas.
+- **Prettier + ESLint** – Formato de código y linting.
+- **Docker + Nginx** – Containerización y servidor web en producción.
 
-## How to Use
-Customization is simple and straightforward:
+## Personalización
+La personalización es simple y directa:
 
-- All customizable data (name, links, content, etc.) is stored in `lib/constants/` dir.
-- Images can be replaced in the `public` folder.
-- OG images for blogs and projects are stored in `public/og/`.
-- Theming follows **shadcn's** color palette and can be easily tweaked.
+- Todos los datos personalizables (nombre, enlaces, contenido, etc.) están en `src/lib/constants/`:
+  - `profile.ts` – Información personal
+  - `services.ts` – Servicios profesionales
+  - `experience.ts` – Experiencia laboral
+  - `education.ts` – Formación académica
+  - `courses.ts` – Cursos y capacitaciones
+  - `skills.ts` – Habilidades técnicas
+  - `tech-stack.ts` – Tecnologías utilizadas
+- Configuración del sitio en `src/lib/config.ts`
+- Imágenes en la carpeta `public/`
+- Imágenes OG para blogs y proyectos en `public/og-images/`
+- Artículos en `src/data/blog/`
+- Proyectos en `src/data/projects/`
 
-## Contribute & Support
-Love the project? Give it a ⭐ on GitHub! Contributions are always welcome—whether it's fixing a bug, adding a new feature, or even correcting a small typo.
+## Comandos Disponibles
 
-[👉 Check out the repo](https://github.com/Louai-Zokerburg/louai) and make your first pull request!
+```bash
+# Desarrollo
+pnpm dev
+
+# Build para producción
+pnpm build
+
+# Preview del build
+pnpm preview
+```
+
+## Deployment con Docker
+
+El proyecto incluye configuración Docker completa:
+
+```bash
+# Build y ejecutar con Docker Compose
+docker-compose up -d
+
+# El sitio estará disponible en http://localhost:8084
+```
+
+### Características del Deployment
+- **Multi-stage build** para optimizar tamaño de imagen
+- **Nginx** como servidor web en producción
+- **Health checks** configurados
+- **Resource limits** (CPU: 0.5, RAM: 512M)
+- Puerto expuesto: 8084
+
+## Estructura del Proyecto
+
+```
+src/
+├── components/       # Componentes reutilizables
+│   ├── sections/    # Secciones del sitio
+│   └── ui/          # Componentes de interfaz
+├── data/            # Contenido en MDX
+│   ├── blog/        # Artículos
+│   └── projects/    # Proyectos
+├── layouts/         # Layouts de página
+├── lib/             # Utilidades y constantes
+│   └── constants/   # Datos personalizables
+├── pages/           # Rutas del sitio
+└── styles/          # Estilos globales
+```
+
+## Información del Sitio
+
+- **Autor**: Gabriela Barreto
+- **Rol**: Licenciada en Higiene y Seguridad en el Trabajo
+- **Sitio**: https://gabrielabarreto.site
+- **Email**: gabrielajbarreto@gmail.com
+
+## Contribuir
+¿Te gusta el proyecto? ¡Dale una ⭐ en GitHub! Las contribuciones son bienvenidas—ya sea corrigiendo un bug, agregando una nueva funcionalidad o corrigiendo un pequeño typo.
 
 ---
 
-Built with ❤️ using **Astro**.
+Construido con ❤️ usando **Astro**.
