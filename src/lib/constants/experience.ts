@@ -27,20 +27,20 @@ export const EXPERIENCES = [
     role: "Asesorías de higiene y seguridad, capacitaciones, check list."
   },
   {
-    date: "04/2024",
-    company: "Celulosa Argentina S.A.",
-    subcontractor: "Cemacorp S.A.",
-    present: true,
-    position: "Responsable de higiene y seguridad en el trabajo",
-    role: "Asesorías de higiene y seguridad, capacitaciones, check list."
-  },
-  {
     date: "05/2021",
     company: "Experta ART",
     subcontractor: "CRT Consultora",
     present: true,
     position: "Prevencionista",
     role: "Auditorías a empresas (agro, industria y obras), para el asesoramiento, control y seguimiento correspondientes a las normativas de higiene, seguridad y medio ambiente."
+  },
+  {
+    date: "04/2024 al 08/2025",
+    company: "Celulosa Argentina S.A.",
+    subcontractor: "Cemacorp S.A.",
+    present: false,
+    position: "Responsable de higiene y seguridad en el trabajo",
+    role: "Asesorías de higiene y seguridad, capacitaciones, check list."
   },
   {
     date: "12/2024 al 02/2025",

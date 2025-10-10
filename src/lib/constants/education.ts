@@ -2,14 +2,14 @@
 
 export const EDUCATION = [
   {
-    title: "Perito Judicial",
-    year: "En curso", // o puede ser "En curso"
-    institute: "Colegio de Obstétricas de la Prov. Buenos Aires" // Aquí el instituto donde estudió
-  },
-  {
     title: "Tramo de formación Pedagógica",
     year: "En curso", // o puede ser "En curso"
     institute: "Universidad de FASTA" // Aquí el instituto donde estudió
+  },
+  {
+    title: "Curso de practica procesal - Peritos",
+    year: "2025", // o puede ser "En curso"
+    institute: "Colegio de Obstétricas de la Prov. Buenos Aires" // Aquí el instituto donde estudió
   },
   {
     title: "Diplomatura en Ergonomía",

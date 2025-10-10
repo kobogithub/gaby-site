@@ -2,10 +2,11 @@
 ### Service Web Personal ####
 services:
   app:
-    image: gaby-site:latest
+    build:
+      context: .
     container_name: gaby-site
     ports:
-      - "8085:80"
+      - "8084:80"
     restart: unless-stopped
     # Si necesitas variables de entorno
     environment:
@@ -25,8 +26,8 @@ services:
           cpus: "0.25"
           memory: 256M
     networks:
-      - public
+      - private
 
 networks:
-  public:
+  private:
     external: true
